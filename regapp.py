@@ -101,7 +101,7 @@ if st.button('Generate Report'):
         openai.api_key = openai_secret_key
 
         response = openai.Completion.create(
-            engine="davinci",
+            engine="text-davinci-002",
             prompt=prompt,
             max_tokens=150
         )
